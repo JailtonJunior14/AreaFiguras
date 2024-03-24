@@ -11,7 +11,7 @@ namespace AreaFiguras
         static void Main(string[] args)
         {
             string figura;
-            double bas, alt, basm, basM;
+            double bas, alt, basm, basM, diam, diaM;
 
             Console.WriteLine("Escolha uma figura: Quadrado(Q), Retângulo(R), Trapézio(T), Losango(L)");
             figura = Console.ReadLine().ToLower();
@@ -43,10 +43,10 @@ namespace AreaFiguras
                     break;
                 case "l":
                     Console.WriteLine("Digite a diagonal menor: ");
-                    basm = double.Parse(Console.ReadLine());
+                    diam = double.Parse(Console.ReadLine());
                     Console.WriteLine("Digite a diagonal maior: ");
-                    basM = double.Parse(Console.ReadLine());
-                    Console.WriteLine("A area do Trapézio é: " + (basm * basM) / 2);
+                    diaM = double.Parse(Console.ReadLine());
+                    Console.WriteLine("A area do Trapézio é: " + (diam * diaM) / 2);
                     break;
                 default: Console.WriteLine("Opição invalida");
                     break;
